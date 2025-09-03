@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import jwt from 'jsonwebtoken'
-import { JWTPayload, ErrorResponse } from '../lib/types'
+import { JWTPayload, ErrorResponse } from '../../lib/types'
 
 export interface AuthenticatedRequest extends NextApiRequest {
   user: JWTPayload;
